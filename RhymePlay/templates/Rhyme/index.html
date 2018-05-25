@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% load staticfiles %}
+
+<link rel ="stylesheet" href={% static "/style.css" %}/>
+<link rel="icon" href="icon.png"/>
+<link href="https://fonts.googleapis.com/css?family=Poppins:800" rel="stylesheet"> 
+</head>
+
+<div id="start">
+
+<div id="big-head">
+
+<img src={% static "/icon.png" %}/>
+
+<h1 >Rhyme it Away</h1>
+</div>
+
+<div id= "row-card">
+<div class = "card"><a href="{% url "compGame" %}">Play against others</a></div>
+<div class = "card"><a href="{% url "multiGame" %}">Play against PC</a></div>
+</div>
+
+</div>
+</body>
+
+</html>

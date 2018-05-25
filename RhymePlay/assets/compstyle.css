@@ -1,0 +1,59 @@
+*{
+
+    margin:0;
+    padding:0;}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+    body,html{
+    
+    height: 100%;
+    width:100%;
+
+}
+#start{
+    font-size: 200%;
+    background-size: cover;
+    animation-name: example;
+    animation-duration: 4s;
+    font-family: 'Poppins', sans-serif;
+    -webkit-animation: Gradient 2s ease infinite;
+	-moz-animation: Gradient 2s ease infinite;
+	animation: Gradient 2s ease infinite;
+    background-image: linear-gradient(316deg, #08d9d6 0%, #ff2e63 100%);
+
+
+    color:#eaeaea;
+    width:100%;
+    height: 100%;
+
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    -webkit-align-content: center;
+    align-content: center;
+    justify-content: center;
+    }
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+input{
+    position: absolute;
+    bottom:5px;
+    border: none;
+    color: inherit;
+    font-size: 50%;
+    background-color: transparent;
+}
