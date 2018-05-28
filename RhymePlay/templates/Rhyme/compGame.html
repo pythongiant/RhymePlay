@@ -12,10 +12,26 @@
 <div id="start">
 
 <div id="big-head">
-<h1>Hello</h1>
+<h3>Dried Cups and High <span>Hopes</span></h3>
 
+{% for rhyme in rhymes %}
+        {% autoescape off %}
+
+   <h3> {{rhyme}}</h3>
+           {% endautoescape %}
+
+{% endfor %}
+    
 </div>
-<input placeholder="type"/>
+<Div id="lol">
+<Form method="POST" action = "/RhymeAct">
+{% csrf_token %}
+
+{{form}}
+<input type="submit"  value="&#10004;">
+</Form>
+</div>
+
 </div>
 </body>
 

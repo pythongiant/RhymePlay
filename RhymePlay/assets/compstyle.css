@@ -49,11 +49,36 @@ a{
 		background-position: 0% 50%
 	}
 }
-input{
+#lol{
     position: absolute;
-    bottom:5px;
+
+    bottom:2vh;
+}
+#lol  input[type="text"] {
+
     border: none;
     color: inherit;
-    font-size: 50%;
+    width: auto;
+    font-size: 110%;
+    text-align: center;
     background-color: transparent;
+}
+input[type="submit"]{
+    background-color: #252a34;
+    color:#eaeaea;
+    border-radius: 3px;
+    border: none;
+    padding:1.1vh;
+}
+
+    #lol input[type="text"]:focus{
+    border-bottom: 1px solid;
+    
+}
+
+label{
+    display: none;
+}
+span{
+    color:#c9c9c9;
 }
